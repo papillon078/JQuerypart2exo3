@@ -12,11 +12,16 @@
   </p>
   <script type="text/javascript" src='assets/lib/jquery-3.4.1.min.js'></script>
   <script>
-  $('#show').click(function(){
+  $(function(){
+    //utilisation d'une fonction par lien
+    $('#show').click(function(){
+      // ".show" affiche le texte qui est dans le paragraphe d'id "text"
       $('#text').show();
-  });
-  $('#hide').click(function(){
+    });
+    // ".hide" cache le texte qui est dans le paragraphe d'id "text"
+    $('#hide').click(function(){
       $('#text').hide();
+    });
   });
   </script>
 </body>
